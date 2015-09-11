@@ -9,9 +9,9 @@ div#chart1 {
   height:300px;
 }
 a#page-link {
-  border: 1px solid #444;
+  border: 1px solid #555;
   text-decoration:none;
-  padding:1px 5px;
+  padding:3px 10px;
   background-color:#777;
   color:#fff;
   font-size:9px;
