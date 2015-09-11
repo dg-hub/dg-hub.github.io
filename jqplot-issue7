@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <link class="include" rel="stylesheet" type="text/css" href="http://rawgit.com/jqPlot/jqPlot/master/src/jquery.jqplot.css" />
+        <script class="include" type="text/javascript" src="http://rawgit.com/jqPlot/jqPlot/master/src/jquery.min.js"></script>
+
+        <!--  jqPlot/master -->
+        <script class="include" type="text/javascript" src="http://rawgit.com/jqPlot/jqPlot/master/src/jquery.jqplot.js"></script>
+
+        <!--  dg-spark/jqPlot/patch-1 -->
+        <!-- <script class="include" type="text/javascript" src="http://rawgit.com/dg-spark/jqPlot/patch-1/src/jquery.jqplot.js"></script> -->
+
+        <script class="include" type="text/javascript" src="http://rawgit.com/jqPlot/jqPlot/master/src/plugins/jqplot.barRenderer.js"></script>
+    </head>
+    <body>
+        <div id="chart1"></div>
+        <div id="highlight-info"></div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var plot1 = $.jqplot ('chart1', [[14, 5, -6, -2, 5]],
+                    {seriesDefaults:{
+                        renderer:$.jqplot.BarRenderer,
+                        rendererOptions:{waterfall:true}
+                    }
+                });
+                $('#chart1').bind('jqplotDataHighlight', function (ev, seriesIndex, pointIndex, data) {
+                    $('div#highlight-info').html('Highlight- seriesIndex:' + seriesIndex + ', pointIndex:' + pointIndex);
+                });
+            });
+        </script>
+    </body>
+</html> 
