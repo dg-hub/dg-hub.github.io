@@ -27,10 +27,10 @@
                     }
                 });
                 $('#chart1').bind('jqplotDataHighlight', function (ev, seriesIndex, pointIndex, data) {
-                    $('div#highlight-info').html('Highlight- seriesIndex:' + seriesIndex + ', pointIndex:' + pointIndex);
+                    $('div#highlight-info').html('Highlight- seriesIndex:' + seriesIndex + ', pointIndex:' + pointIndex).css('background-color','#fcc');;
                 });
                 $('#chart1').bind('jqplotDataUnhighlight', function (ev, seriesIndex, pointIndex, data) {
-                    $('div#highlight-info').html('Highlight-').css('background-color','#faa');
+                    $('div#highlight-info').html('Highlight-').css('background-color','none');
                 });
             });
         </script>
