@@ -3,6 +3,10 @@ div#page-title {
   font-weight:bold;
   padding:2px;
 }
+div#chart1 {
+  width:800px;
+  height:600px;
+}
 a#page-link {}
 div#highlight-info { 
   border: 1px solid #999;
