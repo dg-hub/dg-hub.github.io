@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: http://me.glidden.co.nz/sitemap.xml
