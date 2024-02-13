@@ -4,7 +4,7 @@ cd /srv/jekyll
 git clone https://dg-hub:$1@github.com/dg-hub/dg-hub.github.io.git
 cd /srv/jekyll/dg-hub.github.io
 rm -rf /srv/jekyll/dg-hub.github.io/*
-cp /srv/jekyll/_site/* /srv/jekyll/dg-hub.github.io
+cp -r /srv/jekyll/_site /srv/jekyll/dg-hub.github.io
 echo !!!!!!!!!!!!!!!SOURCE!!!!!!!!!!!!!!!
 ls  /srv/jekyll/_site/
 echo !!!!!!!!!!!!!!!TARGET!!!!!!!!!!!!!!!
