@@ -95,10 +95,12 @@
 
 <p>Here’s what you gain:</p>
 
-<p><strong>1. Clear Visibility:</strong> Gain a comprehensive understanding of how LLMs are streamlining workflows, boosting productivity, and driving innovation, even in unexpected departments.
-<strong>2. Bottleneck Identification:</strong> Pinpoint areas where LLM adoption is low or ineffective, allowing you to address challenges and maximize their value.
-<strong>3. Data-Driven Decisions:</strong> Use factual insights to guide future LLM investments, ensuring they align with your strategic goals.
-<strong>4. Employee Empowerment:</strong> Equip employees with the knowledge to leverage LLMs effectively, unlocking their full potential and transforming daily tasks.</p>
+<ul>
+  <li><strong>1. Clear Visibility:</strong> Gain a comprehensive understanding of how LLMs are streamlining workflows, boosting productivity, and driving innovation, even in unexpected departments.</li>
+  <li><strong>2. Bottleneck Identification:</strong> Pinpoint areas where LLM adoption is low or ineffective, allowing you to address challenges and maximize their value.</li>
+  <li><strong>3. Data-Driven Decisions:</strong> Use factual insights to guide future LLM investments, ensuring they align with your strategic goals.</li>
+  <li><strong>4. Employee Empowerment:</strong> Equip employees with the knowledge to leverage LLMs effectively, unlocking their full potential and transforming daily tasks.</li>
+</ul>
 
 <p>Don’t let the data mountain obscure the value LLMs bring to your organization. By leveraging the power of topic modeling and LLMs, you can gain clear insights and unlock the true potential of these transformative tools.</p>
 
@@ -106,48 +108,30 @@
 
 <p><strong>Ready to embark on this journey of discovery?</strong> Let’s work together to understand how LLMs are shaping your organisations future.</p>
 
+<hr />
+
 <h2 id="prompt">Prompt</h2>
 
 <blockquote>
-  <p>Write an email to a colleague to reschedule a meeting thursday because I have an unexpected conflict involving a phone call. Apologise for any inconvenience and offer two alternative times for the rescheduled meeting.</p>
+  <p>“Write an email to a colleague to reschedule a meeting thursday because I have an unexpected conflict involving a phone call. Apologise for any inconvenience and offer two alternative times for the rescheduled meeting.”</p>
 </blockquote>
 
-<h2 id="bertopic-classification">BERTopic Classification</h2>
+<h2 id="topic-classification">Topic Classification</h2>
 
 <pre><code class="language-json">
     "1": [
-        [
-            "meeting",
-            0.015928226435436704
-        ],
-        [
-            "tomorrow",
-            0.007408962865214033
-        ],
-        [
-            "call",
-            0.007053428896275531
-        ],
-        [
-            "thursday",
-            0.005805450289975135
-        ],
-        [
-            "availability",
-            0.005333975677416746
-        ],
+        [ "meeting", 0.015928226435436704 ],
+        ["tomorrow", 0.007408962865214033 ],
+        [ "call", 0.007053428896275531 ],
+        [ "thursday", 0.005805450289975135 ],
+        [ "availability", 0.005333975677416746 ],
     ],
 </code></pre>
 
 <h2 id="gpt-output">GPT Output</h2>
 
 <blockquote>
-  <p>I’ve categorised these into general thematic areas</p>
-  <ul>
-    <li>Topics related to professional interaction and discussions, including software updates, meeting schedules, project management, and employee feedback.</li>
-    <li>Emotional and personal interactions between team members, including expressions of gratitude, leadership qualities, and delegation of tasks.</li>
-  </ul>
-
+  <p>“I’ve categorised these into general thematic areas - Topics related to professional interaction and discussions, such as meeting schedules.”</p>
 </blockquote>
 
 
